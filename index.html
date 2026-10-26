@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura Sushi – Frisk sushi i hjertet af byen</title>
+  <meta name="description" content="Sakura Sushi – håndlavet sushi af friske råvarer. Spis i restauranten eller bestil take away.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo"><span class="logo__mark">桜</span> Sakura Sushi</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Åbn menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#om">Om os</a>
+        <a href="#menu">Menu</a>
+        <a href="#galleri">Galleri</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#booking" class="btn btn--small">Book bord</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="eyebrow">寿司 · Siden 2015</p>
+      <h1>Håndlavet sushi<br>med sjæl</h1>
+      <p class="hero__lead">Friske råvarer, traditionelle teknikker og et strejf af nordisk enkelhed. Spis hos os eller tag smagen med hjem.</p>
+      <div class="hero__actions">
+        <a href="#booking" class="btn">Book bord</a>
+        <a href="#menu" class="btn btn--ghost">Se menuen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Om os -->
+  <section class="section" id="om">
+    <div class="container about">
+      <div class="about__img">
+        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=80" alt="Sushikok skærer frisk laks" loading="lazy">
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">Om os</p>
+        <h2>Kunsten i enkelheden</h2>
+        <p>Hos Sakura Sushi tror vi på, at den bedste sushi starter med de bedste råvarer. Vores fisk leveres frisk hver morgen, og risen koges efter en opskrift, der er gået i arv gennem generationer.</p>
+        <p>Vores kokke har trænet i både Tokyo og København, og hver eneste rulle laves i hånden – lige før den serveres.</p>
+        <ul class="stats">
+          <li><strong>10+</strong><span>års erfaring</span></li>
+          <li><strong>40+</strong><span>retter på menuen</span></li>
+          <li><strong>4,8★</strong><span>gæsteanmeldelser</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section section--dark" id="menu">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Menu</p>
+        <h2>Vores menu</h2>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="nigiri" role="tab">Nigiri</button>
+        <button class="tab" data-tab="maki" role="tab">Maki & ruller</button>
+        <button class="tab" data-tab="sashimi" role="tab">Sashimi</button>
+        <button class="tab" data-tab="varme" role="tab">Varme retter</button>
+        <button class="tab" data-tab="menuer" role="tab">Menuer</button>
+      </div>
+
+      <div class="menu-panel is-active" data-panel="nigiri">
+        <div class="menu-item"><div><h3>Sake nigiri</h3><p>Frisk norsk laks på sushiris</p></div><span class="price">42 kr · 2 stk</span></div>
+        <div class="menu-item"><div><h3>Maguro nigiri</h3><p>Tun af højeste kvalitet</p></div><span class="price">52 kr · 2 stk</span></div>
+        <div class="menu-item"><div><h3>Ebi nigiri</h3><p>Kogt tigerreje</p></div><span class="price">44 kr · 2 stk</span></div>
+        <div class="menu-item"><div><h3>Hamachi nigiri</h3><p>Yellowtail med yuzu</p></div><span class="price">56 kr · 2 stk</span></div>
+        <div class="menu-item"><div><h3>Flamberet laks</h3><p>Let brændt laks med teriyaki og sesam</p></div><span class="price">48 kr · 2 stk</span></div>
+        <div class="menu-item"><div><h3>Tamago nigiri</h3><p>Sød japansk omelet <span class="tag">V</span></p></div><span class="price">36 kr · 2 stk</span></div>
+      </div>
+
+      <div class="menu-panel" data-panel="maki">
+        <div class="menu-item"><div><h3>California roll</h3><p>Krabbe, avocado, agurk, tobiko</p></div><span class="price">89 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Spicy tuna roll</h3><p>Tun, spicy mayo, forårsløg</p></div><span class="price">98 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Dragon roll</h3><p>Tempura-reje, avocado, ål, teriyaki</p></div><span class="price">118 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Sakura roll</h3><p>Husets special: laks, flødeost, mango, flamberet laks på toppen</p></div><span class="price">124 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Avocado maki</h3><p>Klassisk avocado-rulle <span class="tag">V</span></p></div><span class="price">49 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Crispy veggie roll</h3><p>Tempura-grøntsager, sød chili <span class="tag">V</span></p></div><span class="price">89 kr · 8 stk</span></div>
+      </div>
+
+      <div class="menu-panel" data-panel="sashimi">
+        <div class="menu-item"><div><h3>Laks sashimi</h3><p>Tynde skiver frisk laks</p></div><span class="price">89 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Tun sashimi</h3><p>Rødt tunkød, skåret i hånden</p></div><span class="price">109 kr · 8 stk</span></div>
+        <div class="menu-item"><div><h3>Sashimi mix</h3><p>Laks, tun, hamachi og kammusling</p></div><span class="price">179 kr · 16 stk</span></div>
+      </div>
+
+      <div class="menu-panel" data-panel="varme">
+        <div class="menu-item"><div><h3>Miso suppe</h3><p>Tofu, wakame, forårsløg <span class="tag">V</span></p></div><span class="price">39 kr</span></div>
+        <div class="menu-item"><div><h3>Edamame</h3><p>Dampede sojabønner med havsalt <span class="tag">V</span></p></div><span class="price">45 kr</span></div>
+        <div class="menu-item"><div><h3>Gyoza</h3><p>Stegte dumplings med kylling eller grønt</p></div><span class="price">65 kr · 5 stk</span></div>
+        <div class="menu-item"><div><h3>Ebi tempura</h3><p>Sprøde tigerrejer med tentsuyu</p></div><span class="price">85 kr · 5 stk</span></div>
+        <div class="menu-item"><div><h3>Chicken teriyaki</h3><p>Grillet kylling med ris og salat</p></div><span class="price">139 kr</span></div>
+      </div>
+
+      <div class="menu-panel" data-panel="menuer">
+        <div class="menu-item"><div><h3>Menu for 1</h3><p>16 stk: nigiri, maki og en husets rulle + miso suppe</p></div><span class="price">219 kr</span></div>
+        <div class="menu-item"><div><h3>Menu for 2</h3><p>36 stk: blandet udvalg + edamame</p></div><span class="price">449 kr</span></div>
+        <div class="menu-item"><div><h3>Omakase</h3><p>Kokkens udvalg – 7 serveringer. Kræver bordreservation</p></div><span class="price">595 kr / pers.</span></div>
+        <div class="menu-item"><div><h3>Veggie menu</h3><p>20 stk vegetarisk sushi + edamame <span class="tag">V</span></p></div><span class="price">199 kr</span></div>
+      </div>
+
+      <p class="menu-note"><span class="tag">V</span> = vegetarisk. Spørg personalet om allergener.</p>
+    </div>
+  </section>
+
+  <!-- Galleri -->
+  <section class="section" id="galleri">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Galleri</p>
+        <h2>Et kig ind i køkkenet</h2>
+      </div>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80" alt="Udvalg af sushi" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=800&q=80" alt="Sushiruller på tallerken" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=800&q=80" alt="Nigiri med laks" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1562802378-063ec186a863?auto=format&fit=crop&w=800&q=80" alt="Sushi og spisepinde" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a?auto=format&fit=crop&w=800&q=80" alt="Sashimi anretning" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1607301405390-d831c242f59b?auto=format&fit=crop&w=800&q=80" alt="Maki ruller" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Anmeldelser -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Gæsterne siger</p>
+        <h2>Anmeldelser</h2>
+      </div>
+      <div class="reviews">
+        <blockquote><p>"Den bedste sushi, jeg har fået uden for Japan. Sakura roll er et must!"</p><cite>– Maria K.</cite></blockquote>
+        <blockquote><p>"Hyggelig stemning, venligt personale og super friske råvarer."</p><cite>– Jonas P.</cite></blockquote>
+        <blockquote><p>"Omakase-menuen var en kæmpe oplevelse. Vi kommer helt sikkert igen."</p><cite>– Sofie & Anders</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="section section--dark" id="booking">
+    <div class="container booking">
+      <div class="booking__text">
+        <p class="eyebrow">Reservation</p>
+        <h2>Book et bord</h2>
+        <p>Udfyld formularen, så bekræfter vi din reservation hurtigst muligt. Ved selskaber over 8 personer bedes du ringe til os.</p>
+      </div>
+      <form class="form" id="bookingForm" novalidate>
+        <div class="form__row">
+          <label>Navn<input type="text" name="navn" required></label>
+          <label>Telefon<input type="tel" name="telefon" required></label>
+        </div>
+        <label>E-mail<input type="email" name="email" required></label>
+        <div class="form__row">
+          <label>Dato<input type="date" name="dato" id="dato" required></label>
+          <label>Tid
+            <select name="tid" required>
+              <option value="">Vælg tid</option>
+              <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+              <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+            </select>
+          </label>
+          <label>Antal
+            <select name="antal" required>
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </label>
+        </div>
+        <label>Kommentar (valgfri)<textarea name="kommentar" rows="3" placeholder="Allergier, særlige ønsker..."></textarea></label>
+        <button type="submit" class="btn btn--full">Send reservation</button>
+        <p class="form__msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="section" id="kontakt">
+    <div class="container contact">
+      <div>
+        <p class="eyebrow">Find os</p>
+        <h2>Kontakt</h2>
+        <p><strong>Adresse</strong><br>Sushivej 12<br>1000 København K</p>
+        <p><strong>Telefon</strong><br><a href="tel:+4512345678">+45 12 34 56 78</a></p>
+        <p><strong>E-mail</strong><br><a href="mailto:hej@sakurasushi.dk">hej@sakurasushi.dk</a></p>
+      </div>
+      <div>
+        <h3>Åbningstider</h3>
+        <table class="hours">
+          <tr><td>Mandag</td><td>Lukket</td></tr>
+          <tr><td>Tirsdag – Torsdag</td><td>16:00 – 21:30</td></tr>
+          <tr><td>Fredag – Lørdag</td><td>16:00 – 22:30</td></tr>
+          <tr><td>Søndag</td><td>16:00 – 21:00</td></tr>
+        </table>
+        <p class="open-status" id="openStatus"></p>
+      </div>
+      <div class="map">
+        <iframe title="Kort" src="https://www.openstreetmap.org/export/embed.html?bbox=12.56%2C55.67%2C12.59%2C55.69&layer=mapnik" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo"><span class="logo__mark">桜</span> Sakura Sushi</a>
+      <p>© <span id="year"></span> Sakura Sushi. Alle rettigheder forbeholdes.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
